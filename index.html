@@ -418,19 +418,38 @@
       align-items: flex-end;
     }
   }
+/* COMPLETELY REPLACE the existing media query with this: */
 @media (min-width: 769px) and (max-width: 1440px){
   header{
-    justify-content: center !important;
-    text-align: center;
+    display: flex !important;
     flex-direction: column !important;
-    gap: 16px;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+    padding: 24px 20px !important;
   }
+  
   .brand{
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    width: 100% !important;
   }
+  
+  .brand h1{
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  
   .header-contact{
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    gap: 8px !important;
   }
 }
   @media (max-width: 768px){
