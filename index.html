@@ -692,26 +692,50 @@ document.getElementById('year').textContent = new Date().getFullYear();
    If you have Brian Rose (3) or Wanda WalPole (4) include their ratings exactly as provided.
    ------------------------- */
 const REVIEWS = [
-  { name: "Yin Hwee Chua", rating: 5, body: "" },
-  { name: "Jordan Murphy", rating: 5, body: "" },
-  { name: "R R", rating: 1, body: "" },
-  { name: "Kyle Tabor", rating: 5, body: "" },
-  { name: "Kevin Schwartz", rating: 5, body: "" },
-  { name: "Lindsay King", rating: 1, body: "" },
-  { name: "Jeffrey Allen", rating: 5, body: "" },
-  { name: "Kara Riddle", rating: 5, body: "" },
-  { name: "Mark Ward", rating: 5, body: "" },
-  { name: "Cornelius Byrd", rating: 5, body: "" },
-  { name: "Rob Sanchez", rating: 5, body: "" },
-  { name: "Ron Murray", rating: 1, body: "" },
-  { name: "Roger Reynolds", rating: 5, body: "" },
-  { name: "Jennifer Stewart", rating: 5, body: "" },
-  { name: "Bill Taber", rating: 5, body: "" },
-  { name: "Kennedi Breuklander", rating: 5, body: "" },
-  { name: "Shelly Collins", rating: 5, body: "" },
-  { name: "William Camp", rating: 5, body: "" },
-  { name: "Karen Mata", rating: 5, body: "" },
-  { name: "Andrew Trausch", rating: 5, body: "" },
+  { name: "Yin Hwee Chua", rating: 5, body: "Went to get help for low tire pressure. Jared carefully and thoroughly checked my rear wheel and found a nail. He told me honestly that it needs to be checked by a tire shop but went ahead and get air to the tire to get me going for no charge. Great service, excellent communication, genuine smile, would highly recommend to anyone.
+" },
+  { name: "Jordan Murphy", rating: 5, body: "Quick diagnosis. Fast service. Manager Curtis has been having significant health issues. He has been in and out of the hospital since December with his most recent trip to the heart unit. Please have patience with the employees at the shop and a little bit of grace with the pace. Thanks for all you do Anderson Automotive you've been great.
+" },
+  { name: "R R", rating: 1, body: "I called to get an alignment on my truck and was told they could do it.  When I went up there and pulled it in and onto the rack, they then informed me that they couldn’t do it bc it’s a 3500 and their lift couldn’t lift it!  Thanks so much for wasting my time and fuel.  Maybe ask a couple questions when a customer calls.  I wouldn’t have this shop change the oil in my push mower.
+" },
+  { name: "Kyle Tabor", rating: 5, body: "Curtis and his staff were a life saver today. One of our fleet vehicles had a flat about a quarter mile on the highway and they not only got us back up and running in 15min they drove us back to our abandoned truck.
+" },
+  { name: "Kevin Schwartz", rating: 5, body: "If you're wanting a HomeTown mechanic shop that will shoot you straight and cut the bull crap. This is the place that you need to be. They will tell you exactly what's wrong with the vehicle and they will fix it in a timely manner! I have been quoted multiple times double even triple of the price that I have been quoted for the same mechanical issue at Anderson. These guys have saved me thousands of dollars over the years. And will always continue giving them my business.
+On top of being respectable, honest and hard-working they're not going to waste your money. There has been more than just a few times that I was having repair done at Anderson and it turned out to be something else. They could have just thrown Parts at the vehicle and took my money. But they truly diagnose as they go. And if it takes more time they will simply tell you why and explain the reasons. They don't just throw Parts at things they actually diagnose. So if it takes a little bit longer than a dealership you must understand these guys are quality and not being pushed by a corporate CFO and actually care if your vehicle does come back. They understand they're going to have to look you in the face and Shake Your Hand they want to do the job right the first time." },
+  { name: "Lindsay King", rating: 1, body: "I really wanted to like this place, and we gave them three chances to do a good job, but this last one was the final straw. The back door on our Tahoe decided to stop opening and we couldn't figure out why. We took it to Anderson on a Tuesday morning after calling and they told us to bring it right up. Any sane person would think that implies that they can work on it right away. Finally, Friday morning we called up there because we had not heard anything on it yet. They said they were going to start working on it right away. I was already frustrated that they didn't start working on it until we called up there but then they called back an hour later and said they drilled a hole and blew out the motor on the back door and it was working again. $80 later and we brought it home. It was our own mistake for not trying to open the door while still at Anderson's but alas we didn't try it until we got home. It still did not work. My husband called up there three times and never got a hold of anyone over the course of several days. He finally went up there in person and when he told them that the door wasn't fixed he was met with, "What do you want us to do about it?" Not only was that an unnecessarily rude response it was downright unprofessional. We just wanted you to fix the door that you said you could and even more than that fix the problem that we paid you to fix but clearly did not. If you value your time, money and vehicle, don't do business with Anderson Automotive.
+" },
+  { name: "Jeffrey Allen", rating: 5, body: "Great service and very honest you don’t find that everyday especially from a garage I will definitely use them again if I’m ever in need of a mechanic.
+" },
+  { name: "Kara Riddle", rating: 5, body: "My husband and I put off fixing his A/C for years, thinking it would be too expensive. Anderson Automotive fixed it for less than $200, in one day. We'll definitely return.
+" },
+  { name: "Mark Ward", rating: 5, body: "Affordable prices, pleasant, and honest.   Yes, I'm talking about a car repair shop.  Curtis is laid back and trustworthy.   If you are having car issues I highly recommend giving them a shot.  You won't be disappointed.
+" },
+  { name: "Cornelius Byrd", rating: 5, body: "One is the best place. I know to get your car fixed. And back to running like a clock.
+" },
+  { name: "Rob Sanchez", rating: 5, body: "Got myself in to a rut and needed a last minute fix. Called them up and they were more than accommodating. Got me fixed up in less than 20 mins.
+Great pricing too.
+Will definitely give them all my business here on out" },
+  { name: "Ron Murray", rating: 1, body: "Terrible!!!  Had my 72 monte carlo done because I spent around $1,000 on new tires. Alignment wasn't bad, just didn't want to wear my tires. My dad picked it up  and was it worse than when I brought it in. He took it back and they said I must have hit a curb. They supposedly reworked it and still horrible. Will be in the ditch in 50ft if not careful. Do not recommend this shop! If they would have fixed it I might recommend them.
+" },
+  { name: "Roger Reynolds", rating: 5, body: "These folks are top notch! I was stranded with a shredded tire and they went above and beyond to help me. They let me park my car in front of the business the night before.  They tried to get me a tire but the tire was an odd size. They could get it in the later that day but they let me buy a tire from somewhere else and they mounted and balanced it FOR FREE! They knew I was in a bad place. They were so good to me. Folks, you can't find that kind of character very often these days. If I need anything else, I will drive there regardless of how far away I
+" },
+  { name: "Jennifer Stewart", rating: 5, body: "I pulled in here one day with a car full of kids because my tire light came on and I didn't feel comfortable driving the rest of the way home. Turns out I had a drywall screw in the tire. The owner got my car right in. We walked across the street to get drinks while we waited. The owner offered the kids bottled water they had and when they didnt want that, even offered a vehicle to drove over, even though it was just across the street. By the time we walked over and back, the car was done. Tire patched.
+
+What impressed me the most outside of how extremely friendly the owner was, was when I went to pay he said he doesn't really take card because it charges him a big fee. The problem was, I didn't have any cash on me. It was only 10 bucks. He told me not to worry about it and he would cover it and pay the mechanic himself that fixed our tire, just remember them in the future for any needs. WOW! I can count on one hand the times someone has done that. Thankfully, my husband came by about that time, went and withdrew cash at the ATM next door, and we went ahead and paid the tire guy $20 just because of the sheer kindness they displayed.
+
+We mainly work on anything wrong with our cars as is, but for any of the things we can't do, we will for sure, 100%, take our vehicles here from now on. Can't say enough good things about this shop. Very highly recommend them for anything you need." },
+  { name: "Bill Taber", rating: 5, body: "These guys were GREAT!!  We had some issues with my son’s car dying at stop.  I called them and they said to bring it in without an appointment and they would get right in it… and they did…. Quick easy, best Service experience I have ever had.  And by the way, I work at a dealership.  I quit using the dealership’s service department because it takes them 5 hours to do an oil change and I don’t think they really do much to actually repair the things you need fixed.  Won’t say who for obvious reasons, but the guys at Anderson Automotive were GREAT!  Will definitely be back and highly recommend them to anyone in the area!
+" },
+  { name: "Kennedi Breuklander", rating: 5, body: "Curtis and his team are exceptional. Having trustworthy mechanics is such a hard find these days. So thankful for them <3
+" },
+  { name: "Shelly Collins", rating: 5, body: "Can I give 10 stars? I won’t go anywhere else ever! Toyota wanted over 3000.00 to put a new part in. This wonderful man said all it needed was something simple that he wouldn’t even charge me for. And the hundreds to fix my sway bar, turned out to be around 20.00.
+" },
+  { name: "William Camp", rating: 5, body: "Very friendly and personal experience - unusual these days for an auto shop. Needed an ABS sensor replaced and did EVERYTHING they could to save me money on the job. I was so impressed that they even cared. Both Curtis and Jerry are very engaged with the community and want their clients to leave happy and satisfied. I was so pleased that when I picked up my truck , I dropped off my wife's car for an alignment and oil change. Give Anderson Automotive a try and I am sure you will be back.
+" },
+  { name: "Karen Mata", rating: 5, body: "They were able to diagnose my cause of the issue that I was having with my jeep(death wobble). I came back three hours later for a fix. My jeep has been driving great ever since
+" },
+  { name: "Andrew Trausch", rating: 5, body: "Owner is great. I’ll be taking anything I own with an engine to these guys. Friendly, great pricing, and care about what they do. Thanks for fixing up the Porsche!
+" },
   { name: "Lisa DuPont", rating: 5, body: "" },
   { name: "Mia Shirey", rating: 5, body: "" },
   { name: "Lisa dR", rating: 5, body: "" },
